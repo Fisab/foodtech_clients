@@ -13,13 +13,15 @@
 
 ## Примеры работы:
 
+Прежде всего нужно установить пакет: `pip install git+https://github.com/Fisab/foodtech_clients`
+
 ### Delivery club
 
 Информацию о `refresh_token`, `token`, `secret` можно вытащить при авторизации в веб-версии приложения
 
 ```python
-from foodtech_clients import DeliveryClubClient
 import asyncio
+from foodtech_clients import DeliveryClubClient
 
 base_url = 'https://api.delivery-club.ru/api1.2'
 
@@ -36,8 +38,8 @@ last_active_order = asyncio.run(client.get_last_order(active=True))
 ### Papa Johns
 
 ```python
-from foodtech_clients import PapaJohnsClient
 import asyncio
+from foodtech_clients import PapaJohnsClient
 
 base_url = 'https://api.papajohns.ru'
 city_id = 10  # Москва
