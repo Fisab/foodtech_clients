@@ -1,15 +1,13 @@
 [tool.poetry]
 name = "foodtech_clients"
 version = "0.1.0"
-description = ""
+description = "Clients for food delivery"
 authors = ["Vlad Sudakov <vladsudakov5@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 furl = "^2.1.3"
 aiohttp = "^3.8.1"
-cachetools = "^5.2.0"
-asyncache = "^0.1.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
