@@ -3,7 +3,7 @@ from furl import furl
 from typing import Optional
 
 
-class PapaJohns:
+class PapaJohnsClient:
     def __init__(self, url: str, city_id: int, restaurant_id: int):
         self.base_url = url
         self.city_id = city_id
