@@ -19,6 +19,7 @@
 
 ```python
 from foodtech_clients import DeliveryClubClient
+import asyncio
 
 base_url = 'https://api.delivery-club.ru/api1.2'
 
@@ -29,13 +30,14 @@ client = DeliveryClubClient(
     url=base_url
 )
 
-last_active_order = client.get_last_order(active=True)
+last_active_order = asyncio.run(client.get_last_order(active=True))
 ```
 
 ### Papa Johns
 
 ```python
 from foodtech_clients import PapaJohnsClient
+import asyncio
 
 base_url = 'https://api.papajohns.ru'
 city_id = 10  # Москва
@@ -52,6 +54,6 @@ client = PapaJohnsClient(
     restaurant_id=restaurant_id
 )
 
-delivery_time = client.get_delivery_time(location)
+delivery_time = asyncio.run(client.get_delivery_time(location))
 
 ```
